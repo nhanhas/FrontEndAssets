@@ -22,12 +22,51 @@
 
 </head>
 <body>
+  
 
 <!-- App Body -->
 <div class="container">
 
     <!-- Products -->
-    <div class="product">
+    <div class="product" > 
+        <header class="product-header">
+            <div id="product-{{product.id}}" class="product-header-thumb background-blue">
+                <!--image background -->
+                <img src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
+                <img id="{{product.id}}" src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
+
+            </div>
+        </header>
+        <!-- Details -->
+        <div class="product-info">          
+            <div class="product-info-title">Ticket</div>
+            <hr class="product-info-hr">
+            <div class="product-info-description">Descricao do artigo, um pouco mais extenso que o habitual, so mesmo para ver no layout</div>                  
+            <span class="product-info-price">200€</span>
+        </div>
+    </div>
+    
+    <!-- Products -->
+    <div class="product" > 
+        <header class="product-header">
+            <div id="product-{{product.id}}" class="product-header-thumb background-blue">
+                <!--image background -->
+                <img src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
+                <img id="{{product.id}}" src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
+
+            </div>
+        </header>
+        <!-- Details -->
+        <div class="product-info">          
+            <div class="product-info-title">Ticket</div>
+            <hr class="product-info-hr">
+            <div class="product-info-description">Descricao do artigo, um pouco mais extenso que o habitual, so mesmo para ver no layout</div>                  
+            <span class="product-info-price">200€</span>
+        </div>
+    </div>
+            
+    <!-- Products -->
+    <div class="product" > 
         <header class="product-header">
             <div id="product-{{product.id}}" class="product-header-thumb background-blue">
                 <!--image background -->
@@ -47,6 +86,11 @@
 
 </div>
 <!-- End of App -->
+
+<!-- Menu -->
+<nav class="navbar navbar-dark navbar-fixed-top bg-dark">
+    <a class="navbar-brand" href="#">.IO Shop</a>
+</nav> 
 
 
 <!-- Script -->
