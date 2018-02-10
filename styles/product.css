@@ -1,0 +1,109 @@
+/*Product Cards*/
+.product {
+    border-radius: 4px;
+    cursor : pointer;
+    height: 410px;
+    position: relative;
+    width: 300px;
+    margin: 0 0 30px 0;
+    background-color: #f2f2f2;
+    border: 1px solid rgba(0,0,0,0.05);
+    overflow: hidden; 
+    margin-left: 0;
+}
+/*Product Cards - Thumb*/
+.product-header-thumb{
+    height: 250px;           
+    background-size: cover;
+    position: relative;    
+}
+.product-header-thumb img{       
+    background-size: cover;
+    position: relative;
+}
+.product-header-thumb img:nth-of-type(1){
+    width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    filter: blur(40px); 
+    visibility: hidden;
+}
+.product-header-thumb img:nth-of-type(2){
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 128px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 70px;
+}
+
+/*Product Cards - Info*/
+.product-info{
+    box-sizing: border-box;
+    position: relative;
+    text-align: justify;
+    z-index: 1;
+    background-color: #f2f2f2;
+}    
+.product-info:before{
+    width: 140%;
+    height: 50px;
+    background-color: #f2f2f2;
+    content: '';
+    display: block;    
+    position: absolute;
+    top: -23px;
+    left: -20%;
+    transform: rotate(0deg);
+    z-index: -1;
+}
+.product-info-title{
+    height: 40px;
+    padding: 0px;
+    margin-top: -35px;
+    font-size: 1.2em;
+    font-weight: bold;
+    z-index: 1;
+    color: #779cbf;
+    display: block;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 15px;    
+}
+.product-info-hr{
+    width: 65px;
+    border: 2px solid #779cbf;
+    margin: 0 0 0 15px;
+}
+.product-info-description{
+    padding: 15px;
+    padding-top: 10px;
+    text-align: left;
+    font-size: 14px;
+    padding-bottom: 10px;
+    height: 90px;  
+}
+
+/*Product Cards - Price*/
+.product-info-price{
+    text-align: center;
+    display: block;
+    margin: 0px auto 0;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: larger;
+    font-weight: bold;
+    color: #779cbf;
+    margin-top: 10px;
+    background-color: #e0e0e0;
+    height: 50px;
+    padding-top: 10px;
+}
+
+
+
+    
