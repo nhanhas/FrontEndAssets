@@ -38,30 +38,9 @@
     <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-4">
             <!-- Products -->
-            <div class="product" > 
-                    <header class="product-header">
-                        <div id="product-{{product.id}}" class="product-header-thumb background-blue">
-                            <!--image background -->
-                            <img src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
-                            <img id="{{product.id}}" src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
-            
-                        </div>
-                    </header>
-                    <!-- Details -->
-                    <div class="product-info">          
-                        <div class="product-info-title">Ticket</div>
-                        <hr class="product-info-hr">
-                        <div class="product-info-description">Descricao do artigo, um pouco mais extenso que o habitual, so mesmo para ver no layout</div>                  
-                        <span class="product-info-price">200€</span>
-                    </div>
-                </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <!-- Products -->
-            <div class="product" > 
+            <div class="product" id="product-001"> 
                 <header class="product-header">
-                    <div id="product-{{product.id}}" class="product-header-thumb background-blue">
+                    <div class="product-header-thumb background-blue">
                         <!--image background -->
                         <img src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
                         <img id="{{product.id}}" src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
@@ -76,15 +55,13 @@
                     <span class="product-info-price">200€</span>
                 </div>
             </div>
-
-
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-4">
             <!-- Products -->
-            <div class="product" > 
+            <div class="product" id="product-002"> 
                 <header class="product-header">
-                    <div id="product-{{product.id}}" class="product-header-thumb background-blue">
+                    <div class="product-header-thumb background-blue">
                         <!--image background -->
                         <img src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
                         <img id="{{product.id}}" src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
@@ -99,14 +76,30 @@
                     <span class="product-info-price">200€</span>
                 </div>
             </div>
+        </div>
 
-
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <!-- Products -->
+            <div class="product" id="product-003"> 
+                <header class="product-header">
+                    <div class="product-header-thumb background-blue">
+                        <!--image background -->
+                        <img src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
+                        <img id="{{product.id}}" src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
+        
+                    </div>
+                </header>
+                <!-- Details -->
+                <div class="product-info">          
+                    <div class="product-info-title">Ticket</div>
+                    <hr class="product-info-hr">
+                    <div class="product-info-description">Descricao do artigo, um pouco mais extenso que o habitual, so mesmo para ver no layout</div>                  
+                    <span class="product-info-price">200€</span>
+                </div>
+            </div>
         </div>
     </div>
     
-
-
-
 </div>
 <!-- End of App -->
 
@@ -135,6 +128,27 @@
     </div>
 
 </nav> 
+
+
+<!-- Product Details -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Modal with Dynamic Content</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                
+            </div>
+            <div class="modal-body">
+                <!-- Dinamicaly generated from product-detail.php-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- Libs -->

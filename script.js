@@ -36,3 +36,14 @@ function smoothAnchors(){
     });
 }
 
+/**
+ * Open product Details
+ */
+$('.product').on('click',function(element){
+    //#1 - acquire the selected product
+    var productId = element.currentTarget.id;    
+    
+    $('.modal-body').load('product-detail.php', {productId: productId, productName: "test"},function(){
+        $('#myModal').modal({show:true});
+    });
+});
