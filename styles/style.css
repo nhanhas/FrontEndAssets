@@ -1,6 +1,8 @@
 body{
     background-color: #f3f3f3;
     margin-top: 55px;
+
+    
 }
 
 /*nav bar*/
@@ -11,6 +13,7 @@ body{
     top:0;
     z-index: 1;
 }
+
 
 /*Background Colors*/
 .background-grey{

@@ -19,6 +19,7 @@
 
     <!-- Components CSS -->
     <link href="styles/product.css" rel="stylesheet">
+    <link href="styles/navbar.css" rel="stylesheet">
 
 </head>
 <body>
@@ -89,7 +90,28 @@
 
 <!-- Menu -->
 <nav class="navbar navbar-dark navbar-fixed-top bg-dark">
+    <!-- Logo -->
     <a class="navbar-brand" href="#">.IO Shop</a>
+
+    <!-- Search -->
+    <div class="search">
+        <span class="search-btn" onclick="$('#search-form').css('display','block');
+                                          this.style.display='none'">
+            <i class="fa fa-search fa-lg"></i>
+        </span>
+        
+        <!-- input on click search-btn -->
+        <div id="search-form" style="display: none">
+            <input id="search" type="text" name="query" value="" autocomplete="off" placeholder="Search...">
+            <button type="submit" title="Search" class="submit"></button>
+        </div>        
+    </div>
+
+    <!-- Basket -->
+    <div class="basket">
+        <span><i class="fa fa-shopping-basket fa-lg"></i></span>
+    </div>
+
 </nav> 
 
 

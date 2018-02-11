@@ -90,18 +90,19 @@
 
 /*Product Cards - Price*/
 .product-info-price{
-    text-align: center;
+    text-align: left;
     display: block;
     margin: 0px auto 0;
     position: relative;
     margin-bottom: 20px;
     font-size: larger;
     font-weight: bold;
-    color: #779cbf;
+    color: black;
     margin-top: 10px;
     background-color: #e0e0e0;
     height: 50px;
     padding-top: 10px;
+    padding-left: 15px;
 }
 
 
