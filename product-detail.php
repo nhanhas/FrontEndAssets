@@ -1,7 +1,7 @@
 <?php 
 
     //Read from $_POST
-
+    //TODO - create a product-detail.css, copied from product.css
 ?>
 
 <!doctype html>

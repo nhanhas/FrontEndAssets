@@ -1,9 +1,10 @@
 //check this 
 //https://codepen.io/-J0hn-/pen/vxPPwB?limit=all&page=5&q=e+commerce
 
-
+//On Load Store
 $(document).ready(function($){
-    smoothAnchors();
+    smoothAnchors(); //Setup smooth for anchors in page
+    setupProductModal(); //Setup modal for product details
 });
 
 
@@ -39,11 +40,27 @@ function smoothAnchors(){
 /**
  * Open product Details
  */
-$('.product').on('click',function(element){
-    //#1 - acquire the selected product
-    var productId = element.currentTarget.id;    
-    
-    $('.modal-body').load('product-detail.php', {productId: productId, productName: "test"},function(){
-        $('#myModal').modal({show:true});
+function setupProductModal(){
+    $('.product').on('click',function(element){
+        //#1 - acquire the selected product
+        var productId = element.currentTarget.id;    
+        
+        $('.modal-body').load('product-detail.php', {productId: productId, productName: "test"},function(){
+            //show modal
+            $('#myModal').modal({show:true});
+            //add handler on Add to cart, with product id selected
+            $('#myModal .add-cart-btn').on('click', function(event) {
+                purchaseProduct(productId);
+            });
+        });
     });
-});
+    
+}
+
+
+/**
+ * On Purchase Product
+ */
+function purchaseProduct(productId){
+    console.log(productId);
+}
