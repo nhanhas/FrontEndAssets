@@ -1,9 +1,38 @@
 //check this 
 //https://codepen.io/-J0hn-/pen/vxPPwB?limit=all&page=5&q=e+commerce
 
-//backgroun cool
+
+$(document).ready(function($){
+    smoothAnchors();
+});
+
+
+
 /**
- * 
- * background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg") no-repeat center center;
- * 
+ * Behaviors UX
  */
+function smoothAnchors(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+        } // End if
+    });
+}
+

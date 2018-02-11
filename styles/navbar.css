@@ -1,3 +1,14 @@
+/*nav bar*/
+.navbar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    z-index: 1;
+    background-color: #343a40ba!important;
+}
+
+
 /*Search box*/
 .search-btn{
     color:white;    
@@ -8,10 +19,10 @@
 }
 .search {
     position: absolute;
-    right: 100px;
+    right: 90px;
 }
 .search input {
-    width: 190px;
+    width: 170px;
     padding: 4px 27px 4px 7px;
 }
 .search .submit {
@@ -22,7 +33,7 @@
     padding: 0;
     margin: -29px 0 0 176px;
     border: none;
-    left: -21px;
+    left: -41px;
     top: 30px;
     background-color: transparent;
 }

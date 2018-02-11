@@ -1,19 +1,7 @@
 body{
     background-color: #f3f3f3;
     margin-top: 55px;
-
-    
 }
-
-/*nav bar*/
-.navbar{
-    position: fixed;
-    left: 0;
-    right: 0;
-    top:0;
-    z-index: 1;
-}
-
 
 /*Background Colors*/
 .background-grey{
@@ -27,4 +15,34 @@ body{
 }
 .background-green{
     background-color: #047c6c;
+}
+
+
+
+/*Banner*/
+.banner{
+    margin-top: -60px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../assets/banner.jpg") scroll no-repeat center/cover;
+    height: 570px;
+    text-align: center;
+    color: #ffffff63;
+    padding-top: 200px;
+}
+.banner button{
+    background: 0;
+    color: white;
+    border: solid 3px rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    padding: 10px 40px;
+    font-weight: bold;
+}
+.banner a{
+    text-decoration: none;
+    color: white;
+}
+
+/*Store content*/
+#store-content{
+    padding-top: 60px;
 }

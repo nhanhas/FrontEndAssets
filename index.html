@@ -25,65 +25,87 @@
 <body>
   
 
+
+<!-- Welcome banner -->
+<div class="banner">        
+    <h1>Welcome to <br>.IO Shop</h1>
+    <button><a href="#store-content">SHOP NOW</a></button>
+</div>
+
 <!-- App Body -->
-<div class="container">
+<div class="container" id="store-content">
 
-    <!-- Products -->
-    <div class="product" > 
-        <header class="product-header">
-            <div id="product-{{product.id}}" class="product-header-thumb background-blue">
-                <!--image background -->
-                <img src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
-                <img id="{{product.id}}" src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <!-- Products -->
+            <div class="product" > 
+                    <header class="product-header">
+                        <div id="product-{{product.id}}" class="product-header-thumb background-blue">
+                            <!--image background -->
+                            <img src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
+                            <img id="{{product.id}}" src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
+            
+                        </div>
+                    </header>
+                    <!-- Details -->
+                    <div class="product-info">          
+                        <div class="product-info-title">Ticket</div>
+                        <hr class="product-info-hr">
+                        <div class="product-info-description">Descricao do artigo, um pouco mais extenso que o habitual, so mesmo para ver no layout</div>                  
+                        <span class="product-info-price">200€</span>
+                    </div>
+                </div>
+        </div>
 
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <!-- Products -->
+            <div class="product" > 
+                <header class="product-header">
+                    <div id="product-{{product.id}}" class="product-header-thumb background-blue">
+                        <!--image background -->
+                        <img src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
+                        <img id="{{product.id}}" src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
+        
+                    </div>
+                </header>
+                <!-- Details -->
+                <div class="product-info">          
+                    <div class="product-info-title">Ticket</div>
+                    <hr class="product-info-hr">
+                    <div class="product-info-description">Descricao do artigo, um pouco mais extenso que o habitual, so mesmo para ver no layout</div>                  
+                    <span class="product-info-price">200€</span>
+                </div>
             </div>
-        </header>
-        <!-- Details -->
-        <div class="product-info">          
-            <div class="product-info-title">Ticket</div>
-            <hr class="product-info-hr">
-            <div class="product-info-description">Descricao do artigo, um pouco mais extenso que o habitual, so mesmo para ver no layout</div>                  
-            <span class="product-info-price">200€</span>
+
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <!-- Products -->
+            <div class="product" > 
+                <header class="product-header">
+                    <div id="product-{{product.id}}" class="product-header-thumb background-blue">
+                        <!--image background -->
+                        <img src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
+                        <img id="{{product.id}}" src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
+        
+                    </div>
+                </header>
+                <!-- Details -->
+                <div class="product-info">          
+                    <div class="product-info-title">Ticket</div>
+                    <hr class="product-info-hr">
+                    <div class="product-info-description">Descricao do artigo, um pouco mais extenso que o habitual, so mesmo para ver no layout</div>                  
+                    <span class="product-info-price">200€</span>
+                </div>
+            </div>
+
+
         </div>
     </div>
     
-    <!-- Products -->
-    <div class="product" > 
-        <header class="product-header">
-            <div id="product-{{product.id}}" class="product-header-thumb background-blue">
-                <!--image background -->
-                <img src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
-                <img id="{{product.id}}" src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
 
-            </div>
-        </header>
-        <!-- Details -->
-        <div class="product-info">          
-            <div class="product-info-title">Ticket</div>
-            <hr class="product-info-hr">
-            <div class="product-info-description">Descricao do artigo, um pouco mais extenso que o habitual, so mesmo para ver no layout</div>                  
-            <span class="product-info-price">200€</span>
-        </div>
-    </div>
-            
-    <!-- Products -->
-    <div class="product" > 
-        <header class="product-header">
-            <div id="product-{{product.id}}" class="product-header-thumb background-blue">
-                <!--image background -->
-                <img src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
-                <img id="{{product.id}}" src="http://sis.phc.pt/STOREWSV2/cimagem.aspx?id=u8882_tickets&version=2.00&imgName=img_0">
 
-            </div>
-        </header>
-        <!-- Details -->
-        <div class="product-info">          
-            <div class="product-info-title">Ticket</div>
-            <hr class="product-info-hr">
-            <div class="product-info-description">Descricao do artigo, um pouco mais extenso que o habitual, so mesmo para ver no layout</div>                  
-            <span class="product-info-price">200€</span>
-        </div>
-    </div>
 
 </div>
 <!-- End of App -->
@@ -115,12 +137,12 @@
 </nav> 
 
 
-<!-- Script -->
-<script src="script.js"></script>
-
 <!-- Libs -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Script -->
+<script src="script.js"></script>
 
 </body>
 </html>
